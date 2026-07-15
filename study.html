@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学習記録 - Pixi-Lab</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --accent-purple: #c084fc;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--accent-purple);
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-purple);
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        .note-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .note-item {
+            background-color: rgba(255, 255, 255, 0.02);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .note-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border: 1px solid var(--text-sub);
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .btn-back:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💻 C言語・Javaの学習記録</h1>
+        <p>ここでは、大学の授業や独学で学んだプログラミング言語（C言語やJava）のノート、作成したプログラムなどを記録していきます。</p>
+        
+        <ul class="note-list">
+            <li class="note-item">
+                <h3>📌 2026/xx/xx: C言語 - 変数と条件分岐</h3>
+                <p>最初の講義ノート。if文やループ処理（for, while）の基礎的な書き方をまとめました。（予定）</p>
+            </li>
+            <li class="note-item">
+                <h3>📌 2026/xx/xx: Java - オブジェクト指向の基礎</h3>
+                <p>クラス、インスタンス、メソッドの概念と、簡単なゲームをJavaで作ってみたコードの紹介。（予定）</p>
+            </li>
+        </ul>
+
+        <a href="index.html" class="btn-back">← トップページに戻る</a>
+    </div>
+
+</body>
+</html>
